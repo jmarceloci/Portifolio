@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -57,30 +57,49 @@
         </div>
     </header>
 
-    <!-- Seção Principal da Página (main) -->
-    <main>
+        <!-- Seção contato -->
+        <section id="contato" class="contato_container">
 
-        <!-- Seção Home -->
-        <section id="Sobre" class="sobre_container">
+            <!-- Seção de Contato - Redes Sociais-->
+            <article id="redes_sociais" class="contato_content">
 
-            <!-- Texto da Seção Home -->
-            <article id="sobre_texto" class="sobre_content">
-
-                <h4>Bem-vindo ao meu portfólio de programação!</h4>
-                <p>
-                    Olá! Sou um estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia e
-                    programação. <br>
-                    Meu objetivo é sempre aprender mais e compartilhar minhas experiências com a comunidade. Fique à
-                    vontade para explorar meu trabalho, e se tiver alguma dúvida ou quiser trocar ideias, não hesite em
-                    entrar em contato. <br>
-                    Obrigado por visitar, e espero que goste do que encontrar aqui!
-                </p>
-
-                <a class="botao" target="_blank" href="https://www.linkedin.com/in/jmarceloci/">
-                    Explorar
-                </a>
+                <h4>Contate-me</h4>
+                <div id="icones_redes_sociais" class="flex social_container">
+                    <a href="https://www.linkedin.com/in/jmarceloci/">
+                        <img class="social_icon" src="assets/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/jmarceloci">
+                        <img class="social_icon" src="assets/img/github.svg" alt="Github" />
+                    </a>
+                </div>
 
             </article>
+
+            <!-- Seção do Formulário-->
+            <form id="formulario" action="https://formsubmit.co/78205feff26968befdaa27ea6f7841ad" method="POST">
+
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome">Nome: </label>
+                <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <span id="txtEmail"></span>
+
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem">
+                <span id="txtSubject"></span>
+
+                <label for="message">Mensagem: </label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
+                <span id="txtMensagem"></span>
+
+                <button class="botao" type="submit">Enviar</button>
+
+            </form>
 
         </section>
 
